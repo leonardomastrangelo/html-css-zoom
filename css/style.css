@@ -17,12 +17,18 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     color: var(--color-light);
+    font-size: 13px;
+}
+
+.action
+{
+    color: var(--color-action);
 }
 
 /* utilities */
-.debug {
+/* .debug {
     border: 1px solid orange;
-}
+} */
 
 /* flex utilities */
 .d-flex {
@@ -86,14 +92,14 @@ body {
 }
 
 main {
-    padding: 5px 5px 0 5px;
+    padding: 5px 5px 50px 5px;
     
 }
 
 .card
 {
     width: calc(100% / 7);
-    position: relative;
+    padding: 5px;
 }
 
 .user-img img
@@ -102,6 +108,10 @@ main {
     display: block;
 }
 
+.user-img
+{
+    position: relative;
+}
 .user-name
 {
     position: absolute;
@@ -115,15 +125,25 @@ footer {
     background-color: var(--color-bg-big);
 }
 
-aside
-{
-    padding: 5px;
-}
-
 .singular
 {
-    padding: 15px;
+    padding: 17px;
 }
 
-.icon
-{}
+footer i 
+{
+    font-size: 2.5em;
+    padding: 0 0 5px;
+}
+
+.chevron
+{
+    font-size: 0.5em;
+}
+
+#close-call
+{
+    background-color: rgba(255, 255, 255, 0.25);
+    color: var(--color-end-action);
+    
+}
