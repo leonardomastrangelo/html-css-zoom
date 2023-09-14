@@ -1,0 +1,115 @@
+/* palette */
+:root {
+	--color-light: #ffffff;
+	--color-dark: #000000;
+	--color-action: #4ccd00;
+	--color-end-action: #d61908;
+	--color-bg-big: #4a4a4a;
+}
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* general */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--color-light);
+}
+
+/* utilities */
+.debug {
+    border: 1px solid orange;
+}
+
+/* flex utilities */
+.d-flex {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.j-between
+{
+    justify-content: space-between;
+}
+
+.center
+{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.t-center
+{
+    text-align: center;
+}
+
+/* html */
+
+/* main */
+.container {
+    width: 100%;
+    /* height: 100vh; */
+    padding: 60px 60px 0px 60px;
+    position: relative;
+    background-color: var(--color-dark);
+
+}
+
+.view
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.view div {
+    background-color: rgba(255, 255, 255, 0.25);
+    display: inline-block;
+    padding: 4px;
+  
+}
+
+.view div:last-child
+{
+    margin-left: 5px;
+}
+
+main {
+    padding: 5px 5px 0 5px;
+    
+}
+
+.card
+{
+    width: calc(100% / 7);
+    position: relative;
+}
+
+.user-img img
+{
+    width: 100%;
+    display: block;
+}
+
+.user-name
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color:  rgba(255, 255, 255, 0.15)
+}
+
+footer {
+    background-color: var(--color-bg-big);
+}
+
+.right
+{
+    padding: 40px;
+}
