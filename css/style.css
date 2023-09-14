@@ -115,7 +115,15 @@ footer {
     background-color: var(--color-bg-big);
 }
 
-aside div
+aside
 {
-    padding: 10px 10px 3px;
+    padding: 5px;
 }
+
+.singular
+{
+    padding: 15px;
+}
+
+.icon
+{}
