@@ -62,12 +62,22 @@ body {
 
 /* html */
 
+/* header */
+header
+{
+    height: 60px;
+    position: relative;
+    background-color: var(--color-dark);
+}
+
+
 /* main */
 .container {
     width: 100%;
-    padding: 60px 60px 0px 60px;
-    position: relative;
+    padding: 0px 60px 40px;
     background-color: var(--color-dark);
+    height: calc(100vh - 60px - 90px);
+    overflow-y: auto; 
 
 }
 
@@ -90,11 +100,6 @@ body {
     margin-left: 5px;
 }
 
-main {
-    padding: 5px 5px 50px 5px;
-    height: 100vh;
-    
-}
 
 .card
 {
@@ -122,8 +127,10 @@ main {
     background-color:  rgba(255, 255, 255, 0.15)
 }
 
+/* playbar */
 footer {
     background-color: var(--color-bg-big);
+    height: 90px;
 
 }
 
